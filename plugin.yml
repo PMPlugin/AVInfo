@@ -1,0 +1,7 @@
+name: AVInfo
+main: AVENDA\AVInfo
+version: 0.1
+author: AVENDA
+api:
+- 2.0.0
+- 3.0.0-ALPHA10
