@@ -5,10 +5,11 @@ namespace AVENDA;
 use pocketmine\plugin\PluginBase;
 use VultrM\VultrM;
 use pocketmine\Player;
+use pocketmine\scheduler\PluginTask;
 
 class AVInfo extends PluginBase {
 	public function onEnable() {
-		$this->getServer ()->getScheduler ()->scheduleRepeatingTask ( new Task ( $this ), 20 * 2 );
+		$this->getServer ()->getScheduler ()->scheduleRepeatingTask ( new Task ( $this ), 20 );
 	}
 	public function info(Player $player) {
 		$n = $player->getName ();
