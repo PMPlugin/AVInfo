@@ -26,7 +26,7 @@ class Task extends PluginTask {
 	public function __construct(AVInfo $owner) {
 		$this->owner = $owner;
 	}
-	public function onRun($currentTick) {
+	public function onRun(int $currentTick) {
 		foreach ( $this->owner->getServer ()->getOnlinePlayers () as $player ) {
 			$this->owner->info ( $player );
 		}
